@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Custom Validation</title>
+  <link rel="stylesheet" href="custom-validation.css">
+</head>
+<body>
+  <div class="whole">
+  <h1>Form Validation</h1>
+  <form novalidate>
+    <p>
+      <label for="mail">
+        <span>Please enter an email address:</span>
+        <input type="email" id="mail" name="mail" required minlength="8" aria-live="polite"/>
+        <span class="error" aria-live="polite"></span>
+      </label>
+    </p>
+    <button type="submit">Submit</button>
+  </form>
+  <br>
+  <br>
+  <main>
+    <div class="wrapper">
+      <form>
+        <div>
+          <label for="number">Choose a number number base on how much do you love me</label>
+          <input type="range" id="number" name="number" min="1" max="10">
+        </div>
+        <button type="submit">Save</button>
+      </form>
+    </div>
+  </main>
+    <br>
+    <br>
+  <multi-input>
+    <label>Choose your favorite host</label>
+    <input list="speakers">
+    <datalist id="speakers">
+      <option value="Shaq"></option>
+      <option value="Thannasis"></option>
+      <option value="Charles"></option>
+    </datalist>
+  </multi-input>
+
+  <div id="NBA">
+    <form>
+      <fieldset>
+        <legend>Who is your favorite NBA player?</legend>
+        <ul>
+          <li>
+            <label>
+              <input type="radio" name="players-name" value="Michael Jordan"> Michael Jordan
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="players-name" value="Kobe Bryant"> Kobe Bryant
+            </label>
+          </li>
+          <li>
+            <label>
+              <input type="radio" name="players-name" value="LeBron James"> LeBron James
+            </label>
+          </li>
+        </ul>
+      </fieldset>
+    </form>
+    <br>
+    <br>
+    <br>
+    <div id="greeting">
+    <button>Submit</button>
+      <p>i love you &#128525;</p>
+      <!--<audio src="file:///storage/BCE4-4711/Download/Source/Rick Astley - Never Gonna Give You Up (Official Music Video).mp3" type="audio/mp3" autoplay preload="auto" controls loop></audio>-->
+    </div>
+  </div>
+
+  <script src="custom-validation.js"></script>
+</div>
+</body>
+</html>
